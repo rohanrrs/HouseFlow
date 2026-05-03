@@ -1,15 +1,11 @@
 package com.example.HouseFlow.service;
 
-import com.example.HouseFlow.entity.Rent;
+import com.example.HouseFlow.dto.RentDto;
 import java.util.List;
 
 public interface RentService {
-
-    Rent createRent(Rent rent);
-
-    List<Rent> getAllRents();
-
-    Rent getRentById(Long id);
-
+    RentDto createRent(RentDto dto);
+    List<RentDto> getAllRents();
+    RentDto getRentById(Long id);
     void deleteRent(Long id);
 }
